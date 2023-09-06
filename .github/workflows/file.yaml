@@ -1,0 +1,14 @@
+name: sync to codecommit
+
+on:
+  push:
+    branches:
+        - main
+jobs:
+ job1:
+    runs-on: ubuntu-latest
+    name: sync-code
+    steps:
+     - name: step-one
+       uses: actions/checkout@v2
+  
